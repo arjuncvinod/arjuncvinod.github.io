@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun C Vinod</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/eabac940d1.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="body" onload="light()">
+    <nav>
+        <div class="logo">
+           <h1> arjun</h1>
+        </div>
+        <button class="bar" onclick="navtoggle()"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-items">
+            
+            <ul>
+                
+                <li><a href=""> Home</a></li>
+                <li><a href=""> About</a></li>
+                <li><a href=""> Skills</a></li>
+                <li><a href=""> Projects</a></li>
+                <li><a href=""> Contact me</a></li>
+            </ul>
+        </div>
+        <button onclick="dark()" id="dark" class="theme-btn"><img src="icons/night.png" alt=""></button>
+                    <button onclick="light()" id="light" class="theme-btn"><img src="icons/sun.png" alt=""></i></i></button></li>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="head-container">
+            <div class="heading">
+                <h1>Hi,</h1>
+                <h1><span class="hide">Hi,</span> I'am <span class="name"> Arjun </span></h1>
+                <h1>Web Devoloper</h1>
+                <a href="RESUME.pdf" download ><button>Download CV</button></a>
+            </div>
+            <div class="socials">
+                    <a href="http://facbook.com/arjuncvinod.3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://wa.me/+918304069399"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://instagram.com/arjun.c.vinod"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://twitter.com/arjuncvinod7"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.snapchat.com/add/arjun.cvinod?share_id=0wwf67ih2lA&locale=en-IN"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://www.linkedin.com/in/arjun-c-vinod-951b5a161/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/arjuncvinod/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="explore">
+                    <a href="#about"><i class="fa-solid fa-arrow-down-long"></i></a>
+                </div>
+                 
+            </div>
+            <div class="picture">
+                <div class="dp">
+                    <img src="dp.png" alt="">
+                    
+                </div>
+            </div>
+           
+        </section>
+    </main>
+    <script>
+        function light(){
+            document.body.classList.remove("dark-mode")
+            document.getElementById("light").style.display="none"
+            document.getElementById("dark").style.display="block"
+        }
+        function dark(){
+            document.body.classList.add("dark-mode")
+            document.getElementById("dark").style.display="none"
+            document.getElementById("light").style.display="block"
+
+        }
+
+        function theme(){
+       document.body.classList.toggle("dark-mode");
+
+        }
+        function navtoggle(){
+            document.querySelector(".bar").classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
