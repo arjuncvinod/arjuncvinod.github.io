@@ -142,8 +142,10 @@
 
 
 #about{
+    margin-top: 5vh;
     width: 80vw;
-    height: 92vh;
+    /* height: 92vh; */
+    height: auto;
 }
 .titles{
     display: flex;
@@ -180,7 +182,8 @@
 
 .about{
     padding-top:20px;
-    height: 80vh;
+    /* height: 80vh; */
+    height: auto;
     width: 90vw;
     display: flex;
     flex-direction: column
@@ -192,7 +195,8 @@
     display: none;
 }
 .about-container{
-    height: 75vh;
+    /* height: 75vh; */
+    height: auto;
     width: 100%;
 }
 
@@ -237,7 +241,9 @@
 
 
 #skills{
-    height: 90vh;
+    margin-top: 10vh;
+    /* height: 90vh; */
+    height: auto;
     width: 90vw;
 }
 .skill-container{
@@ -247,13 +253,15 @@
     justify-content:center;
     gap:0;
     align-items: center;
-    height:30%;
+    /* height: 30%; */
+    height: auto;
 
     filter: blur(2);
 }
 .end{
     width: 90vw;
-    height: 40vh;
+    /* height: 40vh; */
+    height: auto;
     padding:10px;
     border-radius: 10px;
 
@@ -268,9 +276,16 @@
     background-color: transparent;
     z-index: -1;
 }
+.pch1{
+    display: none;
+}
+.mobh1{
+    display: block;
+}
 .skills-box{
  background-color:transparent;
- height: max;
+ /* height: max; */
+ height: auto;
  width: 100%;
  display: flex;
  flex-direction: row;
@@ -288,7 +303,6 @@
     padding: 5px 0;
     transition: .3s;
     animation: shake .5s infinite;
-    z-index: ;
 }
 .skill:hover{
     scale: 1.2;
@@ -312,4 +326,29 @@
     100%{
         rotate: 2deg;
     }
+}
+/* ------------------projects----------------- */
+.project-container{
+    margin-top: 4vh;
+}
+.project:hover{
+    scale: 1;
+    box-shadow: 0px 0px 15px 3px var(--uiclr);
+}
+.project:active{
+    box-shadow: 0px 0px 200px 3px var(--uiclr);
+}
+
+.more-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    /* width:80vw; */
+}
+.more-btn button{
+    width: 80vw;
+    height: 20px;
+    font-size: 1rem;
+    
+}
 }
