@@ -348,6 +348,7 @@ nav{
     padding: 10px 0;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    z-index: -1;
 
 }
 .mobh1{
@@ -498,4 +499,181 @@ padding: 75px 0;
     border: none;
     cursor: pointer;
 
+}
+
+
+/* -----------------------------contact------------------------------------ */
+
+.contact-container{
+    width: 80vw;
+    /* height: 80vh; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0vh;
+
+}
+.left-side{
+    width: 38%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 30px;
+    padding: 5% 10%;
+}
+
+.details h1 i{
+    font-size: 1.8rem;
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    color: var(--uiclr);
+    
+    
+}
+.details h3{
+    margin-left:38px;
+    color: gray;
+    font-weight: 400;
+}
+.details h1{
+    font-weight:500;
+}
+.right-side{
+    padding: 4.8% 1%;
+    width: 58%;
+}
+.input-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.input-container input{
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border:none;
+    outline: 2px solid gray;
+    background-color: inherit;
+     color: inherit;
+     padding: 0 5px ;
+    font-size: 1rem;
+}
+.input-container textarea{
+    width: 80%;
+    border-radius: 10px;
+    border:none;
+    outline: 2px solid gray;
+    background-color: inherit;
+    color: inherit;
+    padding:5px ;
+    font-size: 1rem;
+}
+.input-container textarea::placeholder,.input-container input::placeholder{
+    font-size: 1rem;
+}
+.input-container input:focus, .input-container textarea:focus{
+    outline: 3px solid var(--uiclr);
+    /* border: 1px solid var(--uiclr); */
+}
+.input-container button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--uiclr);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+}
+
+/* ------------------------footer------------------------------ */
+
+footer{
+    width: 80vw;
+    margin-bottom: 3vh;
+
+}
+.footer-socials{
+    display: flex;
+    justify-content: center ;
+    gap: 25px;
+}
+.footer-socials a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--uiclr);
+    border-radius: 100%;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem;
+    transition: .5s;
+}
+.footer-socials a:hover{
+    transform: translateY(-10px);
+}
+.footer-socials a:nth-child(1):hover{
+    background-color:#3b5998;
+    color: white;
+    border-color: #3b5998;
+}
+.footer-socials a:nth-child(2):hover{
+    background-color:  #25D366;
+    color: white;
+    border-color: #25D366;
+}
+.footer-socials a:nth-child(3):hover{
+    background-color: #d62976;
+    color: white;
+    border-color: #d62976;
+}
+.footer-socials a:nth-child(4):hover{
+    background-color: #00acee;
+    color: white;
+    border-color: #00acee;
+}
+.footer-socials a:nth-child(5):hover{
+    background-color: #FFFC00;
+    color: black;
+    border-color: #FFFC00;
+}
+.footer-socials a:nth-child(6):hover{
+    background-color: #0A66C2;
+    color: white;
+    border-color: #0A66C2;
+}
+.footer-socials a:nth-child(7):hover{
+    background-color:  #171515;
+    color: white;
+    border-color: white;
+}
+.footer-socials a:nth-child(8):hover{
+    background-color:  #c8232c;
+    color: white;
+    border-color: #c8232c;
+}
+.footer-socials a:nth-child(9):hover{
+    background-color:  #c4302b;
+    color: white;
+    border-color: #c4302b;
+}
+audio{
+    opacity: .01;
+}
+
+.made{
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: var(--uiclr);
+    color: rgb(237, 230, 230);
+}
+.made i{
+    color: red;
 }
