@@ -1,1 +1,1 @@
-https://arjuncvinod.github.io/web/
+https://arjuncvinod.github.io/
