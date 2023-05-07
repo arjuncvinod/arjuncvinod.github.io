@@ -8,11 +8,11 @@
     <title>Arjun C Vinod</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eabac940d1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
 </head>
 
@@ -70,7 +70,7 @@
 
         </section>
 
-        <section id="about">
+        <section id="about" class="reveal">
             <h1 class="titles">About &nbsp; <span> Me</span> </h1>
             <div class="about">
                 <div class="img-container">
@@ -91,8 +91,8 @@
                             that every project I work on is
                             innovative and meets the highest standards. <br>
 
-<!--                             Outside of work, I enjoy Gaming, Music, and Photography, as I value work-life balance and
-                            personal development. <br> -->
+                            Outside of work, I enjoy Gaming, Music, and Photography, as I value work-life balance and
+                            personal development. <br>
 
                             If you're seeking a passionate and innovative web developer for your project, please feel
                             free to <a href="#contact">contact me.</a> I'd love
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="reveal">
 
             <h1 class="titles"> <span>MY</span> &nbsp Skills</h1>
             <div class="skill-container">
@@ -201,7 +201,7 @@
 
         </section>
 
-        <section id="projects">
+        <section id="projects" class="reveal">
             <h1 class="titles"> <span>MY</span> &nbsp Projects</h1>
             <div class="project-container">
                 <div class="project">
@@ -259,12 +259,12 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="reveal">
             <h1 class="titles"> Contact&nbsp<span>Me</span> </h1>
             <div class="contact-container">
                 <div class="left-side">
                     <div class="details">
-                        <h1><i class="fa-solid fa-phone"></i>Phone</h1>
+                        <h1><i class="fa-solid fa-phone"></i>Call Me</h1>
                         <h3>830 406 9399</h3>
                     </div>
                     <div class="details">
@@ -307,7 +307,7 @@
         </footer>
         <!-- <audio src="Reminder.mp3" autoplay controls> </audio><br> -->
         <p class="made">
-            Made with ❤️ by Arjun
+            Made with <i class="fa fa-heart pulse"></i> by Arjun
         </p>
 
     </main>
@@ -359,6 +359,20 @@
         })
 
     </script>
+    <script>
+    window.addEventListener('scroll', reveal);
+    function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for(var i = 0; i < reveals.length; i++){ 
+        var windowheight=window.innerHeight; 
+        var revealtop=reveals[i].getBoundingClientRect().top; 
+        var revealpoint=150; 
+        if(revealtop < windowheight - revealpoint) {
+        reveals[i].classList.add('active'); 
+    }else{ 
+        reveals[i].classList.remove('active'); 
+    } } } 
+        </script>
 </body>
 
 </html>
