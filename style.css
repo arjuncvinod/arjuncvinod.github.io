@@ -35,6 +35,18 @@ html {
 	background-color:var(--uiclr);
 }
 
+
+.reveal{
+position: relative;
+transform: translateY(150px);
+opacity: 0;
+transition: all 2s ease;
+}
+.reveal.active{
+transform: translateY(0px);
+opacity: 1;
+}
+
 body{
     background-color: white;
     padding: 0 10%;
@@ -56,6 +68,8 @@ nav{
     align-items: center;
     background-color: inherit;
     padding-right: 7vw;
+    top: 0;
+    z-index: 1000;
 }
 .logo{
     display: flex;
@@ -257,6 +271,7 @@ nav{
     width: 80vw;
     display: flex;
     flex-direction: row;
+    gap: 2%;
 }
 .img-container{
 
@@ -274,13 +289,17 @@ nav{
 }
 .about-container{
     height: 75vh;
-    width: 50%;
+    width: 48%;
+    overflow-y: scroll;
+}
+.about-container::-webkit-scrollbar{
+    display: none;
 }
 .p-container{
     display: flex;
     /* justify-content: start; */
     align-items: center;
-    height: 60vh;
+    /* height: 60vh; */
 }
 .about-container div p{
     text-align: justify;
