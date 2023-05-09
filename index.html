@@ -16,8 +16,8 @@
 
 </head>
 
-<body id="body" onload="light()">
-    <nav>
+<body id="body" onload="loader();light();showhome()">
+    <nav id="nav" style="display:none;">
         <div class="logo">
             <h1> arjun</h1>
         </div>
@@ -36,8 +36,8 @@
         <button onclick="dark()" id="dark" class="theme-btn"><img src="icons/night.png" alt=""></button>
         <button onclick="light()" id="light" class="theme-btn"><img src="icons/sun.png" alt=""></i></i></button></li>
     </nav>
-    <main>
-        <section id="home">
+    <main id="main" style="display:none;">
+        <section id="home" class="reveal">
             <div class="head-container">
                 <div class="heading">
                     <h1>Hi,</h1>
@@ -310,6 +310,43 @@
         </p>
 
     </main>
+
+    <!-- -----------------------loading animation----------------- -->
+    <div id="loader">
+    <div class="boxes">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <!-- dribbble -->
+    <a class="dribbble" href="https://dribbble.com/shots/5533600-Loading-boxes" target="_blank"><img
+            src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg"
+            alt=""></a>
+    </div>
+
+
     <script>
         function light() {
             document.body.classList.remove("dark-mode")
@@ -371,6 +408,27 @@
     }else{ 
         reveals[i].classList.remove('active'); 
     } } } 
+        </script>
+
+        <script>
+            var loadtime;
+
+            function loader() {
+                loadtime = setTimeout(showPage, 2000);
+                // document.getElementById("home").classList.add('active');
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("main").style.display = "block";
+                document.getElementById("nav").style.display = "flex";
+                
+            }
+            function showhome(){
+                var ld=setTimeout(shhome,2100)
+                function shhome(){
+                document.getElementById("home").classList.add('active');
+            }}
         </script>
 </body>
 
