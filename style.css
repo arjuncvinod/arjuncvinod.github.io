@@ -692,9 +692,10 @@ audio{
     left: 0;
     width: 100%;
     text-align: center;
-    letter-spacing: 1px;
-    background-color: var(--uiclr);
-    color: rgb(237, 230, 230);
+    letter-spacing: 2px;
+    background-color: inherit;
+    color: var(--uiclr);
+    font-weight: bold;
 }
 .made i{
     color: red;
