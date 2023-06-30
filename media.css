@@ -473,7 +473,7 @@ audio{
     scale: .1;
     /* display: none; */
 }
-@keyframes bounce {
+/* @keyframes bounce {
     70% { transform:translateY(0%); }
     80% { transform:translateY(-15px); }
     90% { transform:translateY(0%); }
@@ -482,4 +482,4 @@ audio{
     99% { transform:translateY(-3px); }
     100% { transform:translateY(0); }
 }
-}
+} */
