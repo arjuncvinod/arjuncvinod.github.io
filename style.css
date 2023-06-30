@@ -126,7 +126,6 @@ nav{
 }
 .heading{
     height: 90%;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: start;
