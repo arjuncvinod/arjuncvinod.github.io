@@ -411,7 +411,7 @@
     width: 0px;
     height: 0px;
     border: none;
-    animation: bounce 2s infinite;
+    /* animation: bounce 2s infinite; */
     /* animation-delay: 1; */
 }
 .footer-socials a:nth-child(1){
