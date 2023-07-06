@@ -273,13 +273,13 @@ nav{
     gap: 2%;
 }
 .img-container{
-
+    padding-top:15px
     width: 50%;
     height: 75vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 .img-container img{
     width: 400px;
