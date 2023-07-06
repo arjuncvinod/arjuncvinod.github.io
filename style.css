@@ -270,11 +270,11 @@ nav{
     width: 80vw;
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    gap: 4%;
+    justify-content:center;
 }
 .img-container{
-    padding-top:15px
-    width: 50%;
+    padding-top:15px;
     height: 75vh;
     overflow: hidden;
     display: flex;
