@@ -169,8 +169,15 @@ nav{
     gap: 30px;
 }
 .socials a{
-        color: inherit;
+    color: inherit;
+        
 
+}
+.socials i{
+    transition: .2s;
+}
+.socials i:hover{
+    transform: scale(1.3);
 }
 .explore{
     position: relative;
