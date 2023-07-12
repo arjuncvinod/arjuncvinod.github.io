@@ -37,7 +37,7 @@ html {
 position: relative;
 transform: translateY(150px);
 opacity: 0;
-transition: all 2s ease;
+transition: all 1s ease;
 }
 .reveal.active{
 transform: translateY(0px);

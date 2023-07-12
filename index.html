@@ -119,6 +119,10 @@
                     <h1>Frontend</h1>
                     <div class="skills-box">
                         <div class="skill">
+                            <img src="skills/react.png" alt="">
+                            <h2>React js</h2>
+                        </div>
+                        <div class="skill">
                             <img src="skills/html.png" alt="">
                             <h2>HTML</h2>
 
@@ -135,10 +139,7 @@
                             <img src="skills/bootstrap.png" alt="">
                             <h2>Bootstrap</h2>
                         </div>
-                        <div class="skill">
-                            <img src="skills/jquery.png" alt="">
-                            <h2>Jquery</h2>
-                        </div>
+                        
 
                         <!-- <div class="skill" style="opacity: 0;"></div> -->
                     </div>
@@ -407,7 +408,7 @@
     for(var i = 0; i < reveals.length; i++){ 
         var windowheight=window.innerHeight; 
         var revealtop=reveals[i].getBoundingClientRect().top; 
-        var revealpoint=150; 
+        var revealpoint=100; 
         if(revealtop < windowheight - revealpoint) {
         reveals[i].classList.add('active'); 
     }else{ 
