@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 1000px){
     body{
         padding: 0 5%;
     }
@@ -61,7 +61,7 @@
 
 }
 
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 1000px){
 
     body{
         padding: 0 5%;
@@ -119,10 +119,13 @@
     height: 100%;
     display: flex;
     justify-content:center;
-    margin-top: 35%;
+    margin-top: 40%;
     align-items: start;
 }
-
+.picture img{
+    min-width: 200px;
+    max-width: 500px;
+}
 .socials{
     /* background-color: antiquewhite; */
     height:20vh;
@@ -242,7 +245,7 @@
 
 /* --------------------skills----------------------- */
 
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 1000px){
 
 
 #skills{
@@ -471,7 +474,7 @@ audio{
     width: 200px;
     /* transform: rotate(-180deg); */
     scale: .1;
-    /* display: none; */
+  }  /* display: none; */
 }
 /* @keyframes bounce {
     70% { transform:translateY(0%); }
