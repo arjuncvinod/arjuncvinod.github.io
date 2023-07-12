@@ -539,6 +539,10 @@ padding: 75px 0;
     gap: 30px;
     padding: 5% 10%;
 }
+.left-side a{
+    text-decoration: none;
+    color: inherit;
+}
 
 .details h1 i{
     font-size: 1.8rem;
