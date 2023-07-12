@@ -49,6 +49,7 @@ body{
     padding: 0 10%;
     color: var(--black);
     transition: 1s;
+    /* transition: color 0.1s; */
 }
 .dark-mode{
     background-color: var(--black);
@@ -71,6 +72,9 @@ nav{
 .logo{
     display: flex;
     width: 50vw;
+}
+.logo h1 span{
+    font-size: 2rem;
 }
 .nav-items{
     width: 50vw;
@@ -436,6 +440,7 @@ padding: 75px 0;
     flex-direction: column;
     box-shadow: 0px 0px 15px  var(--uiclr);
     transition: .5s;
+   
 }
 .project:hover{
     scale: 1.05;
@@ -447,6 +452,7 @@ padding: 75px 0;
     opacity: .8;
     /* margin-bottom: 5px; */
     z-index: -1;
+     transition: .1s;
 }
 .project div{
     display: flex;
@@ -466,6 +472,7 @@ padding: 75px 0;
 }
 .project p{
     margin: 8px;
+    transition: .1s;
 }
 .language{
     background-color: rgba(139, 138, 138, 0.248);
