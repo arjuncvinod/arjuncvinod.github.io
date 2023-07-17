@@ -702,8 +702,16 @@ audio{
     opacity: .01;
 }
 
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright p{
+    color: var(--uiclr);
+}
 .made{
-    position: absolute;
+    position: relative;
     bottom: 1;
     left: 0;
     width: 100%;
@@ -716,6 +724,7 @@ audio{
 .made i{
     color: red;
 }
+
 
 /* --------------------loader---------------------------- */
 .boxes {
