@@ -708,9 +708,10 @@ audio{
     align-items: center;
 }
 .copyright p{
-    color: var(--uiclr);
+    color: gray;
+    font-size: small;
 }
-.made{
+.copyright .made{
     position: relative;
     bottom: 1;
     left: 0;
@@ -720,6 +721,7 @@ audio{
     background-color: inherit;
     color: var(--uiclr);
     font-weight: bold;
+    font-size: 1rem;
 }
 .made i{
     color: red;
