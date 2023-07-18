@@ -302,7 +302,7 @@ nav{
 .about-container{
     height: 75vh;
     width: 48%;
-    overflow-y: scroll;
+    
 }
 .about-container::-webkit-scrollbar{
     display: none;
@@ -311,7 +311,11 @@ nav{
     display: flex;
     /* justify-content: start; */
     align-items: center;
-    /* height: 60vh; */
+    max-height: 53vh;
+    overflow-y: scroll;
+}
+.p-container::-webkit-scrollbar{
+    display: none;
 }
 .about-container div p{
     text-align: justify;
