@@ -369,9 +369,12 @@ nav{
 
 }
 .end h1{
+    font-size: 1.1rem;
+    color: gray;
     width: 5%;
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.233);
+    /* background-color: rgba(128, 128, 128, 0.233); */
+    /* box-shadow: 0 0 6px 1px var(--uiclr); */
     rotate: 180deg;
     height: auto ;
     writing-mode: vertical-lr;
@@ -386,7 +389,9 @@ nav{
     display: none;
 }
 .skills-box{
-background-color: rgba(128, 128, 128, 0.233);
+/* background-color: rgba(128, 128, 128, 0.233); */
+ /* box-shadow: 0 0 6px 1px var(--uiclr);    */
+
  height: 130px;
  width: 100%;
  display: flex;
@@ -408,6 +413,7 @@ background-color: rgba(128, 128, 128, 0.233);
     padding: 5px;
     /* margin: 0 10px;    */
     z-index: -1;
+    box-shadow: 0 0 1000px var(--uiclr);
 }
 .skill img{
     width: 70px;
@@ -868,3 +874,5 @@ audio{
 	 height: 28px;
 }
  
+
+
