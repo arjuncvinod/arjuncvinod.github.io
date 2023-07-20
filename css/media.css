@@ -102,12 +102,16 @@
 .heading span{
     color: inherit
 }
+.multiText{
+    letter-spacing: 1px;
+}
 .multiText span{
     /* position: relative; */
     font-size: .7rem;  
     /* text-align: center; */
     top: -2px;
     /* font-weight:; */
+    
 
     
 }
