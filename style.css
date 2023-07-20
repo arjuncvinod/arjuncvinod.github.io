@@ -120,7 +120,6 @@ nav{
 
 #home{
     display: flex;
-    cursor: none;
 
 }
 .head-container{
@@ -881,25 +880,3 @@ audio{
 	 height: 28px;
 }
  
-
-
-/* -----------------------------------cursor--------------------------------------- */
-
-
-.cursor {
-  left: 0;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  background-color: var(--uiclr);
-  position: absolute;
-  border-radius: 50%;
-  z-index: 10000;
-  color: none;
-}
-
-.cursor__follower {
-  transition: transform .4s;
-  width: 6px;
-  height: 6px;
-}
