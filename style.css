@@ -220,7 +220,8 @@ nav{
     min-width: 400px;
     border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
     transition: 5s;
-    animation: blob 4s infinite alternate-reverse;
+    animation: blob 3s infinite alternate-reverse;
+    filter: drop-shadow(0px 0px 10px #6E57E0 );
 
 }
 @keyframes blob {
@@ -538,6 +539,9 @@ padding: 75px 0;
     cursor: pointer;
 
 }
+.more-btn a button:hover{
+    background-color: #5a47ba;
+}
 
 
 /* -----------------------------contact------------------------------------ */
@@ -626,9 +630,12 @@ padding: 75px 0;
     color: white;
     font-size: 1.2rem;
     border-radius: 10px;
-    border: none;
+    border:none;
+    transition: .5s;
 }
-
+.input-container button:hover{
+    background-color: #5a47ba;
+}
 /* ------------------------footer------------------------------ */
 
 footer{
