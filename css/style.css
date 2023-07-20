@@ -213,7 +213,9 @@ nav{
 }
 .dp{
    display: flex;
-   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
 }
 .dp img{
     width: 70%;
