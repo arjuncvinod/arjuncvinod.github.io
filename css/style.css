@@ -134,9 +134,11 @@ nav{
     flex-direction: column;
     font-size: 2.8rem;
     gap:8px ;
+    letter-spacing: -1.6px;
 }
 .multiText{
     color: inherit;
+    letter-spacing: -1.6px;
 }
 .name{
     color: var(--uiclr);
@@ -223,7 +225,7 @@ nav{
     min-width: 400px;
     border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
     transition: 5s;
-    animation: blob 3s infinite alternate-reverse;
+    animation: blob 3s infinite ;
     filter: drop-shadow(0px 0px 10px #6E57E0 );
 
 }
@@ -233,6 +235,7 @@ nav{
     }
     100%{
         border-radius: 65% 30% 30% 70% / 60% 40% 60% 40%;
+
     }
 }
 .dp img:hover{
@@ -245,14 +248,15 @@ nav{
 /* -------------------------about--------------------------------- */
 
 #about{
+    margin-top: 5vh;
     width: 80vw;
-    height: 100vh;
+    max-height: 100vh;
 }
 .titles{
     display: flex;
     align-items: end;
     height: 20%;
-   justify-content: center;
+    justify-content: center;
     width: 80vw;
     font-size: 2.3rem;
     text-transform:uppercase;
@@ -283,7 +287,7 @@ nav{
 }
 .about{
     padding-top: 20px;
-    height: 80vh;
+    /* height: 80vh; */
     width: 80vw;
     display: flex;
     flex-direction: row;
@@ -292,7 +296,7 @@ nav{
 }
 .img-container{
     padding-top:15px;
-    height: 75vh;
+    /* height: 75vh; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -304,7 +308,7 @@ nav{
     box-shadow: 0px 0px 2px 2x;
 }
 .about-container{
-    height: 75vh;
+    /* max-height: 75vh; */
     width: 48%;
     
 }
@@ -314,9 +318,13 @@ nav{
 .p-container{
     display: flex;
     /* justify-content: start; */
-    align-items: center;
-    max-height: 53vh;
+    align-items: start;
+    max-height: 74%;
+    /* max-height:53vh; */
     overflow-y: scroll;
+    letter-spacing: 1.1px;
+    line-height: 27px;
+
 }
 .p-container::-webkit-scrollbar{
     display: none;
@@ -324,8 +332,8 @@ nav{
 .about-container div p{
     text-align: justify;
     width: 40vw;
-    font-size: 1.1rem;
-    line-height :28px;
+    font-size: 1rem;
+    /* line-height :28px; */
     
     /* word-wrap:break-word; */
 }
@@ -336,8 +344,9 @@ nav{
 }
 
 .btn-container{
+    margin-top: 25px;
     display: flex;
-    height: 10vh;
+    /* max-height: 7.5vh; */
     align-items:end;
 }
 .btn-container .button{
