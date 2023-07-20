@@ -102,6 +102,15 @@
 .heading span{
     color: inherit
 }
+.multiText span{
+    /* position: relative; */
+    font-size: .7rem;  
+    /* text-align: center; */
+    top: -2px;
+    /* font-weight:; */
+
+    
+}
 .heading button{
     background-color: var(--uiclr);
     padding: 15px 25px;
