@@ -238,7 +238,25 @@ nav{
 }
 .socials a{
     color: inherit;
-    animation: drop 1s;
+    animation: drop 1.6s;
+}
+.socials a:nth-child(2){
+    animation-delay: .1s;
+}
+.socials a:nth-child(3){
+    animation-delay: .2s;
+}
+.socials a:nth-child(4){
+    animation-delay: .3s;
+}
+.socials a:nth-child(5){
+    animation-delay: .4s;
+}
+.socials a:nth-child(6){
+    animation-delay: .5s;
+}
+.socials a:nth-child(7){
+    animation-delay: .6s;
 }
 .socials i{
     transition: .2s;
@@ -291,8 +309,20 @@ nav{
     border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
     transition: 5s;
     animation: blob 3s infinite alternate-reverse;
+    animation: slideimg 1.6s;
     filter: drop-shadow(0px 0px 10px #6E57E0 );
 
+
+}
+@keyframes slideimg{
+    0%{
+        opacity: 0;
+        transform: translateX(220px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 @keyframes blob {
     0%{

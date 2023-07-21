@@ -14,10 +14,12 @@
         border: none;
         font-size: 24px;
         color: inherit;
+        animation: slideimg 1s;
     }
     .theme-btn{
         position: absolute;
         right: 50px;
+        animation: slideimg 1s;
     }
     .nav-items{
        
