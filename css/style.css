@@ -94,11 +94,40 @@ nav{
 }
 .nav-items ul li{
     list-style: none;
+    position: relative;
+    animation: drop .5s;
+    /* transform: translateY(50px); */
+}
+.nav-items ul li:nth-child(1){
+    animation-delay: .1s;
+}
+.nav-items ul li:nth-child(2){
+    animation-delay: .2s;
+}
+.nav-items ul li:nth-child(3){
+    animation-delay: .3s;
+}
+.nav-items ul li:nth-child(4){
+    animation-delay: .4s;
+}
+.nav-items ul li:nth-child(5){
+    animation-delay: .5s;
 }
 .nav-items ul li a{
     text-decoration: none;
     color:inherit;
     transition: .2sec ;
+}
+@keyframes drop {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
 }
 .nav-items ul li a:hover{
     color: var(--uiclr);
@@ -107,10 +136,13 @@ nav{
     width: 24px;
 }
 .theme-btn {
+    position: relative;
     background-color: transparent;
     border: none;
     margin-left: 3vw;
     cursor: pointer;
+    animation: drop 1s ;
+    animation-delay: .6s;
 }
 .bar{
     display: none;
