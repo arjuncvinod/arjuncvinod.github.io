@@ -73,6 +73,18 @@ nav{
 .logo{
     display: flex;
     width: 50vw;
+    animation: slide 1s;
+    
+}
+@keyframes slide {
+ 0%{
+    opacity: 0;
+    transform: translateX(-300px);
+ }
+ 100%{
+    opacity: 1;
+    transform: translateX(0px);
+ }
 }
 .logo a {
     color:inherit;
@@ -168,6 +180,19 @@ nav{
     gap:8px ;
     letter-spacing: -1.6px;
 }
+.heading h1:first-child{
+    animation: slide 1s;
+    animation-delay: .2s;
+}
+.heading h1:nth-child(2){
+    animation: slide 1s;
+    animation-delay: .3s;
+}
+.heading h1:nth-child(3){
+    animation: slide 1s;
+    animation-delay: .4s;
+}
+
 .multiText{
     color: inherit;
     letter-spacing: -1.6px;
@@ -194,6 +219,8 @@ nav{
     color: white;
     cursor: pointer;
     transition: .2sec;
+    animation: slide 1s;
+    animation-delay: .5s;
 }
 .button:hover{
     background-color: #5e43e4;
@@ -211,11 +238,11 @@ nav{
 }
 .socials a{
     color: inherit;
-        
-
+    animation: drop 1s;
 }
 .socials i{
     transition: .2s;
+
 }
 .socials i:hover{
     transform: scale(1.3);
