@@ -300,6 +300,7 @@ nav{
    display: flex;
    align-items: center;
    flex-direction: column;
+   animation: slideimg 1.6s;
 
 }
 .dp img{
@@ -307,9 +308,8 @@ nav{
     max-width: 700px;
     min-width: 400px;
     border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
-    transition: 5s;
-    animation: blob 3s infinite alternate-reverse;
-    animation: slideimg 1.6s;
+    /* transition: 5s; */
+    animation: blob 5s infinite alternate-reverse;
     filter: drop-shadow(0px 0px 10px #6E57E0 );
 
 
@@ -328,9 +328,11 @@ nav{
     0%{
         border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
     }
+    50%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
     100%{
-        border-radius: 65% 30% 30% 70% / 60% 40% 60% 40%;
-
+        border-radius: 70% 30% 46% 54% / 36% 29% 71% 64%
     }
 }
 .dp img:hover{

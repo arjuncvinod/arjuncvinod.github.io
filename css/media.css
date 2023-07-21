@@ -229,7 +229,7 @@
     align-items: start;
     max-height: auto;
     height: auto;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     letter-spacing: 0px;
 
 }
