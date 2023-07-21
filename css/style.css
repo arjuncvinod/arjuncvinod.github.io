@@ -51,6 +51,7 @@ body{
     color: var(--black);
     transition: 1s;
     /* transition: color 0.1s; */
+    overflow-x: hidden;
 }
 .dark-mode{
     background-color: var(--black);
@@ -309,7 +310,7 @@ nav{
     min-width: 400px;
     border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
     /* transition: 5s; */
-    animation: blob 5s infinite alternate-reverse;
+    animation: blob 4s ease-in-out infinite alternate-reverse;
     filter: drop-shadow(0px 0px 10px #6E57E0 );
 
 
@@ -317,7 +318,7 @@ nav{
 @keyframes slideimg{
     0%{
         opacity: 0;
-        transform: translateX(220px);
+        transform: translateX(300px);
     }
     100%{
         opacity: 1;
@@ -328,11 +329,8 @@ nav{
     0%{
         border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
     }
-    50%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
     100%{
-        border-radius: 70% 30% 46% 54% / 36% 29% 71% 64%
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
 .dp img:hover{
@@ -988,3 +986,12 @@ audio{
 	 height: 28px;
 }
  
+/* * {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    transition: 5s;
+    width: auto;
+    height: 100vh;
+} */
