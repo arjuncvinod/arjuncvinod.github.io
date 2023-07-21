@@ -1,5 +1,5 @@
 
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 1100px){
     body{
         padding: 0 5%;
     }
@@ -64,7 +64,7 @@
 
 }
 
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 1100px){
 
     body{
         padding: 0 5%;
@@ -173,7 +173,7 @@
     display: flex;
     align-items: end;
     height:15%;
-   justify-content: center;
+    justify-content: center;
     width: 90vw;
     font-size: 1.5rem;
     text-transform:uppercase;
@@ -230,13 +230,14 @@
     max-height: auto;
     height: auto;
     font-size: 1rem;
+    letter-spacing: 0px;
 
 }
 .about-container div p{
     text-align: justify;
     width: 90VW;
     font-size: 1rem;
-    line-height :24px;
+    line-height :27px;
     
     
 }
@@ -260,7 +261,7 @@
 
 /* --------------------skills----------------------- */
 
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 1100px){
 
 
 #skills{
