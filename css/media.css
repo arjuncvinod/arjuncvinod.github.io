@@ -4,7 +4,7 @@
         padding: 0 5%;
     }
     #home{
-        height: 90vh;
+        max-height: 90vh;
     }
     .bar{
         display:block;
