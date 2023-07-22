@@ -455,7 +455,8 @@ nav{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 4vw;
+    row-gap: 2vw;
+    column-gap: 1vw
 }
 .edu-box{ 
     position: relative;
@@ -469,7 +470,7 @@ nav{
     box-shadow: 0px 0px 12px 0px gray;
     border-radius: 8px;
     transition: .5s;
-    margin: 10px;
+    margin: 30px;
     padding: 10px;
    
 }
