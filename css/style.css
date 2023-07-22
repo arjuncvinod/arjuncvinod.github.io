@@ -461,7 +461,7 @@ nav{
     position: relative;
     display: flex;
     width: 500px;
-    height: 150px;
+    max-height: 250px;
     /* direction: flex; */
     flex-direction: row;
     /* justify-content: space-between; */
@@ -491,6 +491,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin-right: 10px;
 }
 .edu-icon p{
     width: 1px;
@@ -508,6 +509,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 10px;
 }
 .edu-year span{
     background-color: rgba(141, 139, 139, 0.459);
