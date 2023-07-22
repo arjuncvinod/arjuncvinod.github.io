@@ -429,9 +429,6 @@ nav{
     text-align: justify;
     width: 40vw;
     font-size: 1rem;
-    /* line-height :28px; */
-    
-    /* word-wrap:break-word; */
 }
 .p-container p a , .p-container p span {
     text-decoration: none;
@@ -442,7 +439,6 @@ nav{
 .btn-container{
     margin-top: 25px;
     display: flex;
-    /* max-height: 7.5vh; */
     align-items:end;
 }
 .btn-container .button{
@@ -463,10 +459,7 @@ nav{
     display: flex;
     width: 500px;
     max-height: 250px;
-    /* direction: flex; */
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* border: 1px solid; */
     box-shadow: 0px 0px 12px 0px gray;
     border-radius: 8px;
     transition: .5s;
@@ -481,7 +474,6 @@ nav{
     margin-top: 3px;
     width: 10%;
     height: 100%;
-    /* background-color: red; */
     color: white;
 }
 .edu-icon i{
