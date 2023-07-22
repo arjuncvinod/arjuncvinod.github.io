@@ -346,6 +346,7 @@ nav{
     margin-top: 5vh;
     width: 80vw;
     max-height: 100vh;
+    margin-bottom: 10vh;
 }
 .titles{
     display: flex;
@@ -447,7 +448,83 @@ nav{
 .btn-container .button{
     padding: 12px 30px;
 }
+/*-------------------Education-----------------------*/
 
+.edu-container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+.edu-box{ 
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 150px;
+    /* direction: flex; */
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* border: 1px solid; */
+    box-shadow: 0px 0px 12px 0px gray;
+    border-radius: 8px;
+    transition: .5s;
+    margin: 10px;
+    padding: 10px;
+   
+}
+.edu-box:hover{
+    box-shadow: 0px 0px 200px  var(--uiclr);
+}
+.edu-icon{
+    margin-top: 3px;
+    width: 10%;
+    height: 100%;
+    /* background-color: red; */
+    color: white;
+}
+.edu-icon i{
+    background-color: var(--uiclr);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.edu-icon p{
+    width: 1px;
+    height: 90px;
+    background-color: rgba(128, 128, 128, 0.3);
+    position: relative;
+    left: 17px;
+    top: 0px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+.edu-details{
+    width:90%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.edu-year span{
+    background-color: rgba(141, 139, 139, 0.459);
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.edu-title{
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+    font-weight: 500;
+    opacity: .8;
+}
+.edu-desc{
+    color: gray;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
 
 /* --------------------skills----------------------- */
 
