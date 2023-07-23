@@ -35,14 +35,14 @@ html {
 	background-color:var(--uiclr);
 }
 .reveal{
-position: relative;
-transform: translateY(150px);
-opacity: 0;
-transition: all 1s ease;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
 }
 .reveal.active{
-transform: translateY(0px);
-opacity: 1;
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 body{
@@ -50,7 +50,7 @@ body{
     padding: 0 10%;
     color: var(--black);
     transition: 1s;
-    /* transition: color 0.1s; */
+    /* transition: color 0.1s;   */
     overflow-x: hidden;
 }
 .dark-mode{
@@ -145,6 +145,9 @@ nav{
 .nav-items ul li a:hover{
     color: var(--uiclr);
 }
+.nav-items ul li a:active{
+    color: var(--uiclr);
+}
 .theme-btn img{
     width: 24px;
 }
@@ -155,7 +158,6 @@ nav{
     margin-left: 3vw;
     cursor: pointer;
     animation: drop 1s ;
-    animation-delay: .6s;
 }
 .bar{
     display: none;
@@ -636,7 +638,6 @@ padding: 75px 0;
     box-shadow: 0px 0px 16px 0px gray;
     border: 1px solid white;
     transition: .5s;
-   
 }
 .project:hover{
     scale: 1.05;
