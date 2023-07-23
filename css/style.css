@@ -38,7 +38,7 @@ html {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: all 1s ease;
+    transition: all .7s ease;
 }
 .reveal.active{
     transform: translateY(0px);
@@ -199,6 +199,7 @@ nav{
 .multiText{
     color: inherit;
     letter-spacing: -1.6px;
+    transition: .2s;
 }
 .multiText span{
     position: relative;
@@ -452,7 +453,7 @@ nav{
 .edu-container{
     margin-top: 5vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 2vw;
     column-gap: 1vw
@@ -460,7 +461,9 @@ nav{
 .edu-box{ 
     position: relative;
     display: flex;
-    width: 500px;
+    width: 30vw;
+    max-width: 570px;
+    min-width: 330px;
     max-height: 250px;
     flex-direction: row;
     box-shadow: 0px 0px 12px 0px gray;

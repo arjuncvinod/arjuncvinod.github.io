@@ -62,9 +62,7 @@
         color:white; 
     }
 
-}
 
-@media only screen and (max-device-width: 1100px){
 
     body{
         padding: 0 5%;
@@ -256,12 +254,31 @@
     padding: 12px 30px;
 }
 
+/*-------------------Education-----------------------*/
+
+
+.edu-container{
+    margin-top: 4vh;
+}
+.edu-box{
+    max-width: 600px;
+}
+
+@media only screen and (max-device-width: 900px){
+    .edu-container{
+        row-gap: 0vw;
+    }
+    .edu-box{
+        width: 80vw;
+        margin: 15px;
+    }
+    .edu-box:hover{
+    box-shadow: 0px 0px 80px  var(--uiclr);
+    }
 
 }
 
 /* --------------------skills----------------------- */
-
-@media only screen and (max-device-width: 1100px){
 
 
 #skills{
