@@ -632,13 +632,14 @@ padding: 75px 0;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 15px  var(--uiclr);
+    box-shadow: 0px 0px 16px 0px gray;
+    border: 1px solid white;
     transition: .5s;
    
 }
 .project:hover{
     scale: 1.05;
-    box-shadow: 0px 0px 15px 3px var(--uiclr);
+    box-shadow: 0px 0px 200px  var(--uiclr);
 }
 .project h1{
     font-size: 1rem;
