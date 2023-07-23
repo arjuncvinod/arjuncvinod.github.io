@@ -169,7 +169,7 @@
     /* height: 92vh; */
     height: auto;
 }
-.titles{
+.active .titles{
     display: flex;
     align-items: end;
     height:15%;
@@ -183,7 +183,7 @@
 .titles span,.about-container span{
     color: var(--uiclr);
 }
-.titles::after{
+.active .titles::after{
     content: "";
     position:absolute;
     width: 80px;
@@ -197,7 +197,7 @@
         width: 0px;
     }
     100%{
-        width: 150px;
+        width: 80px;
     }
     
 }
@@ -236,7 +236,7 @@
 .about-container div p{
     text-align: justify;
     width: 90VW;
-    font-size: 1rem;
+    font-size: 14px;
     line-height :27px;
     
     
