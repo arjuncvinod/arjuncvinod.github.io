@@ -348,7 +348,7 @@ nav{
     max-height: 100vh;
     margin-bottom: 10vh;
 }
-.titles{
+.active .titles{
     display: flex;
     align-items: end;
     height: 20%;
@@ -359,10 +359,11 @@ nav{
     padding-bottom: 10px;
 
 }
+
 .titles span,.about-container span{
     color: var(--uiclr);
 }
-.titles::after{
+.active .titles::after{
     content: "";
     position:absolute;
     width: 150px;
