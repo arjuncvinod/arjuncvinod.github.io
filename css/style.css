@@ -465,6 +465,7 @@ nav{
     transition: .5s;
     margin: 30px;
     padding: 10px;
+    border: 1px solid white;
    
 }
 .edu-box:hover{
