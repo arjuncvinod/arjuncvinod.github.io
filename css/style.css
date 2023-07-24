@@ -818,6 +818,8 @@ padding: 75px 0;
     border-radius: 10px;
     border:none;
     transition: .5s;
+    text-align: center;
+    font-weight: 500;
 }
 .input-container button:hover{
     background-color: #5a47ba;
