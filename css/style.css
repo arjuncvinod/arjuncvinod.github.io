@@ -52,6 +52,7 @@ body{
     transition: 1s;
     /* transition: color 0.1s;   */
     overflow-x: hidden;
+    
 }
 .dark-mode{
     background-color: var(--black);
@@ -167,6 +168,7 @@ nav{
 
 #home{
     display: flex;
+    
 
 }
 .head-container{
