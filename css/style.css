@@ -524,10 +524,11 @@ nav{
     font-weight: 500;
     opacity: .8;
 }
-.edu-desc{
+.edu-desc a{
     color: gray;
     letter-spacing: 0px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 /* --------------------skills----------------------- */
