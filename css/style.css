@@ -39,10 +39,12 @@ html {
     transform: translateY(150px);
     opacity: 0;
     transition: all .7s ease;
+    scale: .1;
 }
 .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+    scale: 1;
 }
 
 body{

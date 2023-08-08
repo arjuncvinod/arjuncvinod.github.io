@@ -6,6 +6,9 @@
     #home{
         max-height: 90vh;
     }
+    .reveal{
+        scale: 1;
+    }
     .bar{
         display:block;
         position: absolute;
