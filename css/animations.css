@@ -1,0 +1,95 @@
+@keyframes slide {
+ 0%{
+    opacity: 0;
+    transform: translateX(-300px);
+ }
+ 100%{
+    opacity: 1;
+    transform: translateX(0px);
+ }
+}
+@keyframes drop {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes scroll {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+    
+}
+@keyframes slideimg{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes blob {
+    0%{
+        border-radius: 70% 30% 46% 54% / 36% 29% 71% 64% ;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+@keyframes line {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 150px;
+    }
+    
+}
+ @keyframes box1 {
+	 0%, 50% {
+		 transform: translate(100%, 0);
+	}
+	 100% {
+		 transform: translate(200%, 0);
+	}
+}
+ @keyframes box2 {
+	 0% {
+		 transform: translate(0, 100%);
+	}
+	 50% {
+		 transform: translate(0, 0);
+	}
+	 100% {
+		 transform: translate(100%, 0);
+	}
+}
+ @keyframes box3 {
+	 0%, 50% {
+		 transform: translate(100%, 100%);
+	}
+	 100% {
+		 transform: translate(0, 100%);
+	}
+}
+ @keyframes box4 {
+	 0% {
+		 transform: translate(200%, 0);
+	}
+	 50% {
+		 transform: translate(200%, 100%);
+	}
+	 100% {
+		 transform: translate(100%, 100%);
+	}
+}
