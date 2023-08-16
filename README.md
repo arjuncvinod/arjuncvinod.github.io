@@ -10,13 +10,17 @@
 
 **Desktop View** <br>
 
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/01b5f5b5-95c0-4530-8607-5831a0428aac) 
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/43952ef9-9243-4000-a02f-044bfca9b4bb)
+![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/ad273202-5f6f-4ebe-bbf2-bb39dcb1deda)
+![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/c0a0fa9d-6e4f-48cd-8a6e-55f92386a5eb)
+
 <br>
 
 **Mobile View** <br>
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/70126a31-e7cd-4f42-88e2-bb7d78e6a582)
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/9a38306b-8153-47bc-86c6-6fb6d4d732ff)
+![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/0d75c82e-cd5a-4a77-83e2-473663d24032)
+
+
+![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/ed9d1344-b91e-4798-9100-192471ced447)
+
 
 
 
