@@ -16,10 +16,17 @@
 <br>
 
 **Mobile View** <br>
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/0d75c82e-cd5a-4a77-83e2-473663d24032)
+
+<table>
+ <tr>
+  <td> <img src="https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/0d75c82e-cd5a-4a77-83e2-473663d24032"/> </td>
+  <td> <img src="https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/ed9d1344-b91e-4798-9100-192471ced447"/></td>
+ </tr>
+</table>
 
 
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/ed9d1344-b91e-4798-9100-192471ced447)
+
+
 
 
 
