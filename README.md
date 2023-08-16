@@ -24,10 +24,7 @@
  </tr>
 </table>
 
-
-
-
-
+<p align=center> Made with ❤️ by Arjun </p>
 
 
 
