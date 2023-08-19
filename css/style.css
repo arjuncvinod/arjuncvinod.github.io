@@ -827,9 +827,9 @@ footer{
     border-color: #d62976;
 }
 .footer-socials a:nth-child(4):hover{
-    background-color: #00acee;
+    background-color: #212324;
     color: white;
-    border-color: #00acee;
+    border-color:white ;
 }
 .footer-socials a:nth-child(5):hover{
     background-color: #FFFC00;
