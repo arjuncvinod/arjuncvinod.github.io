@@ -498,9 +498,9 @@
     animation-delay: .3s;
 }
 .footer-socials a:nth-child(4){
-    color: #00acee;
+    /* color: #00acee;
 
-    border-color: #00acee;
+    border-color: #00acee; */
     animation-delay: .4s;
 }
 .footer-socials a:nth-child(5){
@@ -515,16 +515,22 @@
     animation-delay: .6s;
 }
 .footer-socials a:nth-child(7){
-    color:  #171515;
+    /* color:  #171515; */
     animation-delay: .7s;
 }
 .footer-socials a:nth-child(8){
     color:  #c8232c;
-
     border-color: #c8232c;
     animation-delay: .8s;
+    display: none;
 }
 .footer-socials a:nth-child(9){
+    /* color:  #c4302b;
+
+    border-color: #c4302b; */
+    animation-delay: .9s;
+}
+.footer-socials a:nth-child(10){
     color:  #c4302b;
 
     border-color: #c4302b;
