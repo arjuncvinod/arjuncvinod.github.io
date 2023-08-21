@@ -21,8 +21,8 @@
 
 <table>
  <tr>
-  <td> <img src="https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/0d75c82e-cd5a-4a77-83e2-473663d24032"/> </td>
-  <td> <img src="https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/ed9d1344-b91e-4798-9100-192471ced447"/></td>
+  <td> <img src="https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/e12a1d7d-f1f2-4cea-a18f-6ee3bef4845b"/> </td>
+  <td> <img src="https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/1a216aac-c674-4882-9149-de083ffe8fb9"/> </td>
  </tr>
 </table>
 
