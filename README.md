@@ -10,8 +10,10 @@
 
 **Desktop View** <br>
 
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/ad273202-5f6f-4ebe-bbf2-bb39dcb1deda)
-![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/c0a0fa9d-6e4f-48cd-8a6e-55f92386a5eb)
+![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/8cf72fa0-d934-4d21-a9d2-e11acc28c0d1)
+
+![image](https://github.com/arjuncvinod/arjuncvinod.github.io/assets/68469520/0e502839-5e08-4258-b144-aa4ea1156492)
+
 
 <br>
 
