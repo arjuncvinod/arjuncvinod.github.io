@@ -1,6 +1,6 @@
 :root {
   --uiclr:#6E57E0;
-  --white: #e4e9fd;
+  --white: #fbfbfd;
   --black: #040c0e;
   --light-black: rgb(53, 50, 50);
 }
@@ -39,16 +39,16 @@ html {
     transform: translateY(150px);
     opacity: 0;
     transition: all .7s ease;
-    scale: .1;
+    /* scale: .1; */
 }
 .reveal.active{
     transform: translateY(0px);
     opacity: 1;
-    scale: 1;
+    /* scale: 1; */
 }
 
 body{
-    background-color: white;
+    background-color: var(--white);
     padding: 0 10%;
     color: var(--black);
     transition: 1s;
@@ -424,7 +424,8 @@ nav{
     min-width: 330px;
     max-height: 250px;
     flex-direction: row;
-    box-shadow: 0px 0px 12px 0px gray;
+    /* box-shadow: 0px 0px 12px 0px gray; */
+    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
     border-radius: 8px;
     transition: .5s;
     margin: 30px;
@@ -433,7 +434,9 @@ nav{
    
 }
 .edu-box:hover{
-    box-shadow: 0px 0px 200px  var(--uiclr);
+    /* box-shadow: 0px 0px 200px  var(--uiclr); */
+    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+    transform: scale3d(1.01,1.01,1.01);
 }
 .edu-icon{
     margin-top: 3px;
@@ -601,13 +604,15 @@ flex-direction: column;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 16px 0px gray;
+    /* box-shadow: 0px 0px 16px 0px gray; */
+    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
     border: 1px solid white;
     transition: .5s;
 }
 .project:hover{
-    scale: 1.05;
+    /* scale: 1.05; */
     /* box-shadow: 0px 0px 200px  var(--uiclr); */
+    transform: scale3d(1.03,1.03,1.03);
 }
 .project h1{
     font-size: 1rem;
@@ -775,7 +780,7 @@ flex-direction: column;
 }
 .input-container button{
     width: 150px;
-    height: 50px;
+    height: 45px;
     background-color: var(--uiclr);
     color: white;
     font-size: 1.2rem;
