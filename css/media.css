@@ -276,7 +276,8 @@
         margin: 15px;
     }
     .edu-box:hover{
-    box-shadow: 0px 0px 80px  var(--uiclr);
+    /* box-shadow: 0px 0px 80px  var(--uiclr); */
+    box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.171);
     }
     .edu-title{
     font-size: 1.15rem;
