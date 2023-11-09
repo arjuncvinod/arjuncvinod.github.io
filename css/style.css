@@ -392,6 +392,7 @@ nav{
     text-align: justify;
     width: 40vw;
     font-size: 1rem;
+    /* font-family: 'Caveat'; */
 }
 .p-container p a , .p-container p span {
     text-decoration: none;
