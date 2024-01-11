@@ -298,9 +298,6 @@ nav{
     border-radius: 65% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
-
-
-
 /* -------------------------about--------------------------------- */
 
 #about{
@@ -1006,12 +1003,3 @@ audio{
 	 height: 28px;
 }
  
-/* * {
-    position: absolute;
-    left: 50%;
-    top:50%;
-    transform: translate(-50% ,-50%);
-    transition: 5s;
-    width: auto;
-    height: 100vh;
-} */
