@@ -82,14 +82,14 @@
 // -----------------------------tilt animation --------------------------
 
 VanillaTilt.init(document.querySelector(".hero-image"), {
-    max: 20,
+    max: 25,
     speed: 400
 });
 
 VanillaTilt.init(document.querySelectorAll(".hero-image"));
 
 VanillaTilt.init(document.querySelector(".edu-box"), {
-    max: 20,
+    max: 25,
     speed: 400
 });
 
@@ -101,3 +101,10 @@ VanillaTilt.init(document.querySelector(".button"), {
 });
 
 VanillaTilt.init(document.querySelectorAll(".button"));
+
+VanillaTilt.init(document.querySelector(".skill"), {
+    max: 25,
+    speed: 400
+});
+
+VanillaTilt.init(document.querySelectorAll(".skill"));
