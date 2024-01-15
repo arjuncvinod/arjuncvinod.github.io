@@ -78,3 +78,26 @@
             const date = new Date()
                 const year = date.getFullYear()
                 document.getElementById("copy").innerHTML = year
+
+// -----------------------------tilt animation --------------------------
+
+VanillaTilt.init(document.querySelector(".hero-image"), {
+    max: 20,
+    speed: 400
+});
+
+VanillaTilt.init(document.querySelectorAll(".hero-image"));
+
+VanillaTilt.init(document.querySelector(".edu-box"), {
+    max: 20,
+    speed: 400
+});
+
+VanillaTilt.init(document.querySelectorAll(".edu-box"));
+
+VanillaTilt.init(document.querySelector(".button"), {
+    max: 25,
+    speed: 400
+});
+
+VanillaTilt.init(document.querySelectorAll(".button"));
