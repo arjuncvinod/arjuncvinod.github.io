@@ -85,26 +85,15 @@ VanillaTilt.init(document.querySelector(".hero-image"), {
     max: 25,
     speed: 400
 });
-
-VanillaTilt.init(document.querySelectorAll(".hero-image"));
-
-VanillaTilt.init(document.querySelector(".edu-box"), {
+VanillaTilt.init(document.querySelectorAll(".edu-box"),{
     max: 25,
     speed: 400
 });
-
-VanillaTilt.init(document.querySelectorAll(".edu-box"));
-
-VanillaTilt.init(document.querySelector(".button"), {
+VanillaTilt.init(document.querySelectorAll(".button"), {
     max: 25,
     speed: 400
 });
-
-VanillaTilt.init(document.querySelectorAll(".button"));
-
-VanillaTilt.init(document.querySelector(".skill"), {
+VanillaTilt.init(document.querySelectorAll(".skill"), {
     max: 25,
     speed: 400
 });
-
-VanillaTilt.init(document.querySelectorAll(".skill"));
