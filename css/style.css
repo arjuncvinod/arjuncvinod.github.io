@@ -973,3 +973,24 @@ html {
   display: block;
   height: 28px;
 }
+
+.mouseTrail {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--uiclr);
+  pointer-events: none;
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y));
+  }
+}
