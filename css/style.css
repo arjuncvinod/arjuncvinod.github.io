@@ -50,6 +50,7 @@ body {
   transition: 1s;
   /* transition: color 0.1s;   */
   overflow-x: hidden;
+  cursor: url('../images/cursor.svg'), auto;
 }
 .dark-mode {
   background-color: var(--black);
@@ -133,7 +134,7 @@ nav {
   background-color: transparent;
   border: none;
   margin-left: 3vw;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), auto;
   animation: drop 1s;
 }
 .bar {
@@ -197,7 +198,7 @@ nav {
   border: none;
   border-radius: 5px;
   color: white;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), auto;
   transition: 0.2sec;
   animation: slide 1s;
   animation-delay: 0.5s;
@@ -640,7 +641,7 @@ iframe {
   outline: none;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), auto;
 }
 
 .action-container button i {
@@ -664,7 +665,7 @@ iframe {
   color: white;
   border-radius: 5px;
   border: none;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), auto;
 }
 .more-btn a button:hover {
   background-color: #5a47ba;
@@ -993,4 +994,7 @@ html {
     opacity: 0;
     transform: translate(var(--x), var(--y));
   }
+}
+a,button{
+  cursor: url('../images/cursor-pointer.svg'), auto;
 }
