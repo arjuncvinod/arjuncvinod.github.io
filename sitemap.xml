@@ -9,12 +9,17 @@
 
 <url>
   <loc>https://www.arjuncvinod.tech/</loc>
-  <lastmod>2024-10-12T16:31:05+00:00</lastmod>
+  <lastmod>2024-11-24T09:47:09+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.arjuncvinod.tech/assets/RESUME.pdf</loc>
-  <lastmod>2024-10-12T16:31:05+00:00</lastmod>
+  <lastmod>2024-11-24T09:47:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjuncvinod.tech/projects</loc>
+  <lastmod>2024-11-24T09:47:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
