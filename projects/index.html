@@ -77,74 +77,121 @@
     </section>
 
     <script>
-      async function loadProjects(category) {
-        const response = await fetch("../assets/projects.json");
-        const projects = await response.json();
+     // Ensure the category buttons have event listeners set up for clicks
+document.querySelectorAll(".category-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const category = btn.textContent.trim(); // Get the category from the button
+    filterProjects(category); // Call filterProjects with the clicked category
+  });
+});
 
-        const projectContainer = document.querySelector(".project-container");
-        projectContainer.innerHTML = ""; 
-        const normalizedCategory = category.toLowerCase();
+async function loadProjects(category) {
+  const response = await fetch("../assets/projects.json");
+  const projects = await response.json();
 
-        const filteredProjects =
-          normalizedCategory === "all"
-            ? projects
-            : projects.filter(
-                (project) => project.category.toLowerCase() === normalizedCategory
-              );
+  const projectContainer = document.querySelector(".project-container");
+  projectContainer.innerHTML = ""; 
+  const normalizedCategory = category.toLowerCase();
 
-        if (filteredProjects.length === 0) {
-          projectContainer.innerHTML = `<p>No projects found in this category.</p>`;
-          return;
-        }
-
-        filteredProjects.forEach((project) => {
-          const projectElement = document.createElement("div");
-          projectElement.classList.add("project", "active");
-          projectElement.setAttribute("data-category", project.category);
-
-          const projectContent = `
-            <div>
-                ${
-                  project.image
-                    ? `<img src="${project.image}" alt="${project.title}">`
-                    : `<iframe src="${project.iframe}" frameborder="0"></iframe>`
-                }
-            </div>
-            <h1>${project.title}</h1>
-            <p>
-                ${project.langs
-                  .map((lang) => `<span class="language">${lang}</span>`)
-                  .join(" ")}
-            </p>
-            <div class="action-container">
-                <a href="${project.github}" target="_blank"><button>Github</button></a>
-                <a href="${project.preview}" target="_blank"><button>Preview</button></a>
-            </div>
-        `;
-
-          projectElement.innerHTML = projectContent;
-          projectContainer.appendChild(projectElement);
-        });
-      }
-
-      function filterProjects(category) {
-        loadProjects(category);
-
-
-        document
-          .querySelectorAll(".category-btn")
-          .forEach((btn) => btn.classList.remove("active"));
-        const activeBtn = Array.from(document.querySelectorAll(".category-btn")).find(
-          (btn) => btn.textContent.toLowerCase() === category.toLowerCase()
+  const filteredProjects =
+    normalizedCategory === "all"
+      ? projects
+      : projects.filter(
+          (project) => project.category.toLowerCase() === normalizedCategory
         );
-        if (activeBtn) activeBtn.classList.add("active");
-      }
 
-      loadProjects("all");
+  if (filteredProjects.length === 0) {
+    projectContainer.innerHTML = `<p>No projects found in this category.</p>`;
+    return;
+  }
+
+  filteredProjects.forEach((project) => {
+    const projectElement = document.createElement("div");
+    projectElement.classList.add("project", "active");
+    projectElement.setAttribute("data-category", project.category);
+
+    const projectContent = `
+      <div>
+          ${
+            project.image
+              ? `<img src="${project.image}" alt="${project.title}">`
+              : `<iframe src="${project.iframe}" frameborder="0"></iframe>`
+          }
+      </div>
+      <h1>${project.title}</h1>
+      <p>
+          ${project.langs
+            .map((lang) => `<span class="language">${lang}</span>`)
+            .join(" ")}
+      </p>
+      <div class="action-container">
+          <a href="${project.github}" target="_blank"><button>Github</button></a>
+          <a href="${project.preview}" target="_blank"><button>Preview</button></a>
+      </div>
+  `;
+
+    projectElement.innerHTML = projectContent;
+    projectContainer.appendChild(projectElement);
+  });
+}
+
+function filterProjects(category) {
+  loadProjects(category);
+
+  // Remove the active class from all category buttons
+  document
+    .querySelectorAll(".category-btn")
+    .forEach((btn) => btn.classList.remove("active"));
+
+  // Add the active class to the clicked button
+  const activeBtn = Array.from(document.querySelectorAll(".category-btn")).find(
+    (btn) => btn.textContent.trim().toLowerCase() === category.toLowerCase()
+  );
+  
+  if (activeBtn) activeBtn.classList.add("active");
+}
+
+// Initialize the first call to load all projects
+loadProjects("all");
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
     <script src="../js/script.js"></script>
+
+
+    <script>
+      
+function spark(event) {
+    let i = document.createElement("s");
+    i.className = "mouseTrail";
+    // Set the position of the element based on the mouse event
+    i.style.left = event.pageX + "px";
+    i.style.top = event.pageY + "px";
+  
+    // Randomly scale the element
+    i.style.transform = `scale(${Math.random() * 2 + 1})`;
+  
+    // Set random transition values
+    i.style.setProperty("--x", getRandomTransitionValue());
+    i.style.setProperty("--y", getRandomTransitionValue());
+    document.body.appendChild(i);
+  
+    // Remove the element after 2 seconds
+    setTimeout(() => {
+      document.body.removeChild(i);
+    }, 2000);
+  };
+  
+  function getRandomTransitionValue() {
+    // Generate a random value between -200 and 200 pixels
+    return `${Math.random() * 400 - 200}px`;
+  }
+  
+  // Add event listener to track mouse movements and create spark effect
+  document.addEventListener("mousemove", spark);
+  
+    </script>
   </body>
 </html>
