@@ -24,6 +24,11 @@
         right: 50px;
         animation: slideimg 1s;
     }
+    .theme-switch{
+        position: absolute;
+        right: 5vw;
+        top: 60px;
+       }
     .nav-items{
        
         width: 0;
@@ -556,3 +561,11 @@ audio{
     100% { transform:translateY(0); }
 }
 } */
+
+@media only screen and (max-device-width: 500px){
+    .theme-switch{
+        position: absolute;
+        right: -15px;
+        top: 60px;
+       }
+}

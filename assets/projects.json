@@ -1,0 +1,259 @@
+[
+    {
+      "id": 1,
+      "title": "AI Driven News Service",
+      "image": "../images/projects/news-home.jpeg",
+      "langs": [
+        "React.js",
+        "CSS",
+        "Node.js",
+        "Express.js",
+        "Firebase",
+        "Gemini API"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/news-service-ai",
+      "preview": "https://news.arjunvinod.tech"
+    },
+    {
+      "id": 2,
+      "title": "Blogging Website",
+      "image": "../images/projects/blog-home.jpg",
+      "langs": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Node.js",
+        "MongoDB"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/Blogging-Website",
+      "preview": "https://blogwebsite-1rl3.onrender.com/"
+    },
+    {
+      "id": 3,
+      "title": "Lost and Found WebApp",
+      "image": null,
+      "iframe": "https://lostandfound-acv.vercel.app/",
+      "langs": [
+        "React.js",
+        "CSS",
+        "Express.js",
+        "Node.js",
+        "MongoDB"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/lost-and-found",
+      "preview": "https://lostandfound-acv.vercel.app"
+    },
+    {
+      "id": 4,
+      "title": "Result Management System",
+      "image": "../images/projects/rms.jpg",
+      "langs": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "PHP",
+        "MySQL"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/Result-management-system",
+      "preview": "https://youtu.be/19TFNIzzG5g"
+    },
+    {
+      "id": 5,
+      "title": "Public Clipboard",
+      "image": "../images/projects/clipboard.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "Firebase"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/Result-management-system",
+      "preview": "https://clipboard.arjuncvinod.tech"
+    },
+    {
+      "id": 6,
+      "title": "Top 100 coders website",
+      "image": "../images/projects/100coders.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "TypeScript"
+      ],
+      "category": "static",
+      "github": "https://github.com/arjuncvinod/top100coders-frontend",
+      "preview": "https://coders.top100series.com"
+    },
+    {
+      "id": 7,
+      "title": "Foundation Program website",
+      "image": "../images/projects/foundation.png",
+      "langs": [
+        "Next.js",
+        "CSS",
+        "TypeScript"
+      ],
+      "category": "static",
+      "github": "https://github.com/arjuncvinod/foundation",
+      "preview": "https://foundation.mulearn.org"
+    },
+    {
+      "id": 8,
+      "title": "Musify website template",
+      "image": "../images/projects/musify.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "TypeScript"
+      ],
+      "category": "static",
+      "github": "https://github.com/arjuncvinod/Musify-UI",
+      "preview": "https://musify-musicplayer.vercel.app/"
+    },
+    {
+      "id": 9,
+      "title": "Vote Ready Dashboard",
+      "image": "../images/projects/voteready.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "Firebase"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/Vote-ready-dashboard",
+      "preview": "https://voteready.vercel.app/"
+    },
+    {
+      "id": 10,
+      "title": "Donation Page Frontend",
+      "image": "../images/projects/donation.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "TypeScript"
+      ],
+      "category": "static",
+      "github": "https://github.com/arjuncvinod/mulearn/tree/dev/src/modules/Public/Donation",
+      "preview": "https://app.mulearn.org/donation"
+    },
+    {
+      "id": 11,
+      "title": "Med Reports webApp",
+      "image": "../images/projects/medreports.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "Express.js",
+        "Node.js",
+        "MongoDB"
+      ],
+      "category": "web app",
+      "github":"https://github.com/arjuncvinod/Med-Reports",
+      "preview": "https://medreports.vercel.app/"
+    },
+    {
+      "id": 12,
+      "title": "KBFC website",
+      "image": "../images/projects/kbfc.png",
+      "langs": [
+        "React.js",
+        "CSS"
+      ],
+      "category": "static",
+      "github": "https://github.com/arjuncvinod/KBFC-website",
+      "preview": "https://kbfc.vercel.app/"
+    },
+    {
+      "id": 13,
+      "title": "Jarvis - Discord Bot",
+      "image": "../images/projects/jarvis-bot.png",
+      "langs": [
+        "Python",
+        "Discord.py",
+        "Gpt-3.5 turbo"
+      ],
+      "category": "bot",
+      "github": "https://github.com/arjuncvinod/JARVIS-Discord-Bot",
+      "preview": "https://discord.gg/pmugmKdC6n"
+    },
+    {
+      "id": 14,
+      "title": "Chat Room WebApp",
+      "image": "../images/projects/chatroom.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "Firebase"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/Chat-Room-App",
+      "preview": "https://chatroom-acv.vercel.app/"
+    },
+    {
+      "id": 15,
+      "title": "To-Do List WebApp",
+      "image": "../images/projects/todo-react.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "Local Storage"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/todolist-react",
+      "preview": "https://todolist-acv.vercel.app/"
+    },
+    {
+      "id": 16,
+      "title": "Weather App",
+      "image": "../images/projects/weather.png",
+      "langs": [
+        "React.js",
+        "CSS",
+        "OpenWeather API"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/Weather-App",
+      "preview": "https://liveweatherupdates.netlify.app/"
+    },
+    {
+      "id": 17,
+      "title": "Chat without Save",
+      "image": "../images/projects/chat-wa.png",
+      "langs": [
+        "React.js",
+        "CSS"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/wa-chat-without-save",
+      "preview": "https://chatwithoutsave.netlify.app/"
+    },
+    {
+      "id": 18,
+      "title": "Calculator",
+      "image": "../images/projects/calculator.png",
+      "langs": [
+        "React.js",
+        "CSS"
+      ],
+      "category": "web app",
+      "github": "https://github.com/arjuncvinod/ios-calculator-clone",
+      "preview": "https://calculator-acv.netlify.app/"
+    },
+    {
+      "id": 19,
+      "title": "News API",
+      "image": "../images/projects/newsapi.png",
+      "langs": [
+        "Node.js",
+        "Express.js",
+        "Firebase"
+      ],
+      "category": "api",
+      "github": "https://github.com/arjuncvinod/news-service-ai/tree/master/Backend",
+      "preview": "https://news-service-api.vercel.app/"
+    }
+  
+]
