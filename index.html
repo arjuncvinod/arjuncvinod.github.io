@@ -296,74 +296,25 @@
 
         <section id="projects" class="reveal">
             <h1 class="titles"> <span>MY</span> &nbsp Projects</h1>
-            <div class="project-container">
-                <div class="project reveal" >
-                    <div>
-                        <img src="images/projects/news-home.jpeg" alt="">
-                    </div>
-                    <h1>AI Driven News Service</h1>
-                    <p> <span class="language">React.js </span>
-                        <span class="language"> CSS </span>
-                        <span class="language"> Node.js </span>
-                        <span class="language"> Express.js</span>
-                        <span class="language"> Firebase </span>
-                        <span class="language"> Gemini API</span>
-                    </p>
-                    <div class="action-container">
-                        <a href="https://github.com/arjuncvinod/news-service-ai"><button>Github</button></a>
-                        <a href="https://news.arjunvinod.tech"><button>Preview</button></a>
-                    </div>
-                </div>
-                <div class="project reveal" >
-                    <div>
-                        <img src="images/projects/blog-home.jpg" alt="">
-                    </div>
-                    <h1>Blogging Website</h1>
-                    <p> <span class="language"> HTML </span>
-                        <span class="language"> CSS </span>
-                        <span class="language"> Javascript</span>
-                        <span class="language"> Node.js </span>
-                        <span class="language"> MongoDB </span>
-                    </p>
-                    <div class="action-container">
-                        <a href="https://github.com/arjuncvinod/Blogging-Website"><button>Github</button></a>
-                        <a href="https://blogwebsite-1rl3.onrender.com/"><button>Preview</button></a>
-                    </div>
-                </div>
-                 <div class="project reveal" >
-                    <div>
-                       <iframe src="https://lostandfound-acv.vercel.app/" frameborder="0"></iframe>
-                    </div>
-                    <h1>Lost and Found WebApp</h1>
-                    <p> <span class="language"> React.js </span>
-                        <span class="language"> CSS </span>
-                        <span class="language"> Express.js</span>
-                        <span class="language"> Node.js </span>
-                        <span class="language"> MongoDB </span>
-                    </p>
-                    <div class="action-container">
-                        <a href="https://github.com/arjuncvinod/lost-and-found"><button>Github</button></a>
-                        <a href="https://lostandfound-acv.vercel.app"><button>Preview</button></a>
-                    </div>
-                </div>
-                <!-- <div class="project reveal" >
-                    <div>
-                        <img src="images/rms.jpg" alt="">
-                    </div>
-                    <h1>Result Management System</h1>
-                    <p> <span class="language"> HTML </span>
-                        <span class="language"> CSS </span>
-                        <span class="language"> Javascript</span>
-                        <span class="language"> PHP </span>
-                        <span class="language"> MySQL </span>
-                    </p>
-                    <div class="action-container">
-                        <a href="https://github.com/arjuncvinod/Result-management-system"><button>Github</button></a>
-                        <a href="https://youtu.be/19TFNIzzG5g"><button>Preview</button></a>
-                    </div>
-                </div> -->
-               
-            </div>
+
+            <div class="category-buttons">
+                <!-- <button class="category-btn active" onclick="filterProjects('all')">
+                  All
+                </button> -->
+                <button class="category-btn active" onclick="filterProjects('Web App')">
+                  Web App
+                </button>
+                <button class="category-btn" onclick="filterProjects('Static')">
+                  Static
+                </button>
+                <button class="category-btn" onclick="filterProjects('API')">
+                  API
+                </button>
+                <button class="category-btn" onclick="filterProjects('Bot')">
+                  Bot
+                </button>
+              </div>
+            <div class="project-container"></div>
             <div class="more-btn reveal">
                 <a href="/projects"><button>View More &nbsp;<i
                             class="fa-solid fa-arrow-right"></i></button></a>
@@ -489,6 +440,86 @@
       "image": "https://arjuncvinod.tech/images/Arjun C Vinod.jpg",
       "description": "Professional web developer specializing in frontend and backend development. Skilled in HTML, CSS, JavaScript, React, Node.js, and MongoDB."
     }
+    </script>
+
+
+    <script>
+             // Ensure the category buttons have event listeners set up for clicks
+document.querySelectorAll(".category-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const category = btn.textContent.trim(); // Get the category from the button
+    filterProjects(category); // Call filterProjects with the clicked category
+  });
+});
+
+async function loadProjects(category) {
+  const response = await fetch("assets/projects.json");
+  const projects = await response.json();
+
+  const projectContainer = document.querySelector(".project-container");
+  projectContainer.innerHTML = ""; 
+  const normalizedCategory = category.toLowerCase();
+
+  const filteredProjects =
+    normalizedCategory === "all"
+      ? projects
+      : projects.filter(
+          (project) => project.category.toLowerCase() === normalizedCategory
+        );
+
+  if (filteredProjects.length === 0) {
+    projectContainer.innerHTML = `<p>No projects found in this category.</p>`;
+    return;
+  }
+
+  filteredProjects.slice(0,3).forEach((project) => {
+    const projectElement = document.createElement("div");
+    projectElement.classList.add("project", "reveal","active");
+    projectElement.setAttribute("data-category", project.category);
+
+    const projectContent = `
+      <div>
+          ${
+            project.image
+              ? `<img src="${project.image}" alt="${project.title}">`
+              : `<iframe src="${project.iframe}" frameborder="0"></iframe>`
+          }
+      </div>
+      <h1>${project.title}</h1>
+      <p>
+          ${project.langs
+            .map((lang) => `<span class="language">${lang}</span>`)
+            .join(" ")}
+      </p>
+      <div class="action-container">
+          <a href="${project.github}" target="_blank"><button>Github</button></a>
+          <a href="${project.preview}" target="_blank"><button>Preview</button></a>
+      </div>
+  `;
+
+    projectElement.innerHTML = projectContent;
+    projectContainer.appendChild(projectElement);
+  });
+}
+
+function filterProjects(category) {
+  loadProjects(category);
+
+  // Remove the active class from all category buttons
+  document
+    .querySelectorAll(".category-btn")
+    .forEach((btn) => btn.classList.remove("active"));
+
+  // Add the active class to the clicked button
+  const activeBtn = Array.from(document.querySelectorAll(".category-btn")).find(
+    (btn) => btn.textContent.trim().toLowerCase() === category.toLowerCase()
+  );
+  
+  if (activeBtn) activeBtn.classList.add("active");
+}
+
+// Initialize the first call to load all projects
+loadProjects("web app");
     </script>
 
 </body>

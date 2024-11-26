@@ -112,7 +112,7 @@ async function loadProjects(category) {
 
   filteredProjects.forEach((project) => {
     const projectElement = document.createElement("div");
-    projectElement.classList.add("project", "active");
+    projectElement.classList.add("project", "reveal","active");
     projectElement.setAttribute("data-category", project.category);
 
     const projectContent = `
