@@ -58,26 +58,26 @@
 
 //   ----------------------------Loader Animation ---------------------------------  
 
-            var loadtime;
+var loadtime;
 
-            function loader() {
-                loadtime = setTimeout(showPage, 2000);
-            }
+function loader() {
+    document.getElementById("loader").style.display = "block";
+}
 
-            function showPage() {
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("main").style.display = "block";
-                document.getElementById("nav").style.display = "flex";
-            }
-            function showhome(){
-                var ld=setTimeout(shhome,2100)
-                function shhome(){
-                document.getElementById("home").classList.add('active');
-            }}
+window.onload = function() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("main").style.display = "block";
+    document.getElementById("nav").style.display = "flex";
+    setTimeout(showHome, 100);
+}
 
-            const date = new Date()
-                const year = date.getFullYear()
-                document.getElementById("copy").innerHTML = year
+function showHome() {
+    document.getElementById("home").classList.add('active');
+}
+
+const date = new Date();
+const year = date.getFullYear();
+document.getElementById("copy").innerHTML = year;
 
 // -----------------------------tilt animation --------------------------
 
