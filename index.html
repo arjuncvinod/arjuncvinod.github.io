@@ -444,11 +444,10 @@
 
 
     <script>
-             // Ensure the category buttons have event listeners set up for clicks
 document.querySelectorAll(".category-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    const category = btn.textContent.trim(); // Get the category from the button
-    filterProjects(category); // Call filterProjects with the clicked category
+    const category = btn.textContent.trim();
+    filterProjects(category); 
   });
 });
 
@@ -504,13 +503,10 @@ async function loadProjects(category) {
 
 function filterProjects(category) {
   loadProjects(category);
-
-  // Remove the active class from all category buttons
   document
     .querySelectorAll(".category-btn")
     .forEach((btn) => btn.classList.remove("active"));
 
-  // Add the active class to the clicked button
   const activeBtn = Array.from(document.querySelectorAll(".category-btn")).find(
     (btn) => btn.textContent.trim().toLowerCase() === category.toLowerCase()
   );
@@ -518,7 +514,6 @@ function filterProjects(category) {
   if (activeBtn) activeBtn.classList.add("active");
 }
 
-// Initialize the first call to load all projects
 loadProjects("web app");
     </script>
 
