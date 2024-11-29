@@ -130,3 +130,20 @@ function spark(event) {
   // Add event listener to track mouse movements and create spark effect
   document.addEventListener("mousemove", spark);
   
+
+
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
+
+
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+        e.preventDefault();
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
+});
