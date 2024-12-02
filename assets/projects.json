@@ -33,7 +33,7 @@
     {
       "id": 3,
       "title": "Lost and Found WebApp",
-      "image": null,
+      "image": "../images/projects/lf-home.webp",
       "iframe": "https://lostandfound-acv.vercel.app/",
       "langs": [
         "React.js",
