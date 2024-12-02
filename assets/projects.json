@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "AI Driven News Service",
-      "image": "../images/projects/news-home.jpeg",
+      "image": "../images/projects/news-home.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "title": "Blogging Website",
-      "image": "../images/projects/blog-home.jpg",
+      "image": "../images/projects/blog-home.webp",
       "langs": [
         "HTML",
         "CSS",
@@ -49,7 +49,7 @@
     {
       "id": 4,
       "title": "Result Management System",
-      "image": "../images/projects/rms.jpg",
+      "image": "../images/projects/rms.webp",
       "langs": [
         "HTML",
         "CSS",
@@ -64,7 +64,7 @@
     {
       "id": 5,
       "title": "Public Clipboard",
-      "image": "../images/projects/clipboard.png",
+      "image": "../images/projects/clipboard.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -77,7 +77,7 @@
     {
       "id": 6,
       "title": "Top 100 coders website",
-      "image": "../images/projects/100coders.png",
+      "image": "../images/projects/100coders.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -90,7 +90,7 @@
     {
       "id": 7,
       "title": "Foundation Program website",
-      "image": "../images/projects/foundation.png",
+      "image": "../images/projects/foundation.webp",
       "langs": [
         "Next.js",
         "CSS",
@@ -103,7 +103,7 @@
     {
       "id": 8,
       "title": "Musify website template",
-      "image": "../images/projects/musify.png",
+      "image": "../images/projects/musify.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -116,7 +116,7 @@
     {
       "id": 9,
       "title": "Vote Ready Dashboard",
-      "image": "../images/projects/voteready.png",
+      "image": "../images/projects/voteready.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -129,7 +129,7 @@
     {
       "id": 10,
       "title": "Donation Page Frontend",
-      "image": "../images/projects/donation.png",
+      "image": "../images/projects/donation.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -142,7 +142,7 @@
     {
       "id": 11,
       "title": "Med Reports webApp",
-      "image": "../images/projects/medreports.png",
+      "image": "../images/projects/medreports.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -157,7 +157,7 @@
     {
       "id": 12,
       "title": "KBFC website",
-      "image": "../images/projects/kbfc.png",
+      "image": "../images/projects/kbfc.webp",
       "langs": [
         "React.js",
         "CSS"
@@ -169,7 +169,7 @@
     {
       "id": 13,
       "title": "Jarvis - Discord Bot",
-      "image": "../images/projects/jarvis-bot.png",
+      "image": "../images/projects/jarvis-bot.webp",
       "langs": [
         "Python",
         "Discord.py",
@@ -182,7 +182,7 @@
     {
       "id": 14,
       "title": "Chat Room WebApp",
-      "image": "../images/projects/chatroom.png",
+      "image": "../images/projects/chatroom.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -195,7 +195,7 @@
     {
       "id": 15,
       "title": "To-Do List WebApp",
-      "image": "../images/projects/todo-react.png",
+      "image": "../images/projects/todo-react.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -208,7 +208,7 @@
     {
       "id": 16,
       "title": "Weather App",
-      "image": "../images/projects/weather.png",
+      "image": "../images/projects/weather.webp",
       "langs": [
         "React.js",
         "CSS",
@@ -221,7 +221,7 @@
     {
       "id": 17,
       "title": "Chat without Save",
-      "image": "../images/projects/chat-wa.png",
+      "image": "../images/projects/chat-wa.webp",
       "langs": [
         "React.js",
         "CSS"
@@ -233,7 +233,7 @@
     {
       "id": 18,
       "title": "Calculator",
-      "image": "../images/projects/calculator.png",
+      "image": "../images/projects/calculator.webp",
       "langs": [
         "React.js",
         "CSS"
@@ -245,7 +245,7 @@
     {
       "id": 19,
       "title": "News API",
-      "image": "../images/projects/newsapi.png",
+      "image": "../images/projects/newsapi.webp",
       "langs": [
         "Node.js",
         "Express.js",
