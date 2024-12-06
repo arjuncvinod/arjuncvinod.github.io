@@ -66,6 +66,7 @@ window.onload = function () {
   document.getElementById("main").style.display = "block";
   document.getElementById("nav").style.display = "flex";
   setTimeout(showHome, 100);
+  light();
 };
 
 function showHome() {
