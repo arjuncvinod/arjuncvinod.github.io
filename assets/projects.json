@@ -78,6 +78,7 @@
       "id": 6,
       "title": "Top 100 coders website",
       "image": "../images/projects/100coders.webp",
+      "gif": "../images/projects/gif/100coders.gif",
       "langs": [
         "React.js",
         "CSS",
@@ -91,6 +92,7 @@
       "id": 7,
       "title": "Foundation Program website",
       "image": "../images/projects/foundation.webp",
+      "gif": "../images/projects/gif/foundation.gif",
       "langs": [
         "Next.js",
         "CSS",
@@ -104,6 +106,7 @@
       "id": 8,
       "title": "Musify website template",
       "image": "../images/projects/musify.webp",
+      "gif": "../images/projects/gif/musify.gif",
       "langs": [
         "React.js",
         "CSS",
@@ -130,6 +133,7 @@
       "id": 10,
       "title": "Donation Page Frontend",
       "image": "../images/projects/donation.webp",
+      "gif": "../images/projects/gif/donation.gif",
       "langs": [
         "React.js",
         "CSS",
@@ -158,6 +162,7 @@
       "id": 12,
       "title": "KBFC website",
       "image": "../images/projects/kbfc.webp",
+      "gif": "../images/projects/gif/kbfc.gif",
       "langs": [
         "React.js",
         "CSS"
