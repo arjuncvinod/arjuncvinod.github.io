@@ -118,9 +118,9 @@ async function loadProjects(category) {
     const projectContent = `
       <div>
           ${
-            project.image
-              ? `<img src="${project.image}" alt="${project.title}">`
-              : `<iframe src="${project.iframe}" frameborder="0"></iframe>`
+        project.image
+          ? `<img src="${project.image}" alt="${project.title}" ${project.gif ? `onmouseover="this.src='${project.gif}'" onmouseout="this.src='${project.image}'"` : ''}>`
+          : `<iframe src="${project.iframe}" frameborder="0"></iframe>`
           }
       </div>
       <h1>${project.title}</h1>
