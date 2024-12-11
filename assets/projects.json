@@ -3,6 +3,7 @@
       "id": 1,
       "title": "AI Driven News Service",
       "image": "../images/projects/news-home.webp",
+      "gif": "../images/projects/gif/news-home.gif",
       "langs": [
         "React.js",
         "CSS",
