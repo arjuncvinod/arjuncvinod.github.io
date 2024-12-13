@@ -77,16 +77,26 @@
           Bot
         </button>
       </div>
-
+<div class="search-container">
+  <input
+    type="text"
+    id="search"
+    placeholder="Search for projects..."
+    onkeyup="searchProjects()"
+    autocomplete="off"
+  />
+</div>
       <div class="project-container"></div>
     </section>
 
+    
+
     <script>
-     // Ensure the category buttons have event listeners set up for clicks
+     
 document.querySelectorAll(".category-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    const category = btn.textContent.trim(); // Get the category from the button
-    filterProjects(category); // Call filterProjects with the clicked category
+    const category = btn.textContent.trim(); //
+    filterProjects(category); 
   });
 });
 
@@ -143,17 +153,33 @@ async function loadProjects(category) {
 function filterProjects(category) {
   loadProjects(category);
 
-  // Remove the active class from all category buttons
   document
     .querySelectorAll(".category-btn")
     .forEach((btn) => btn.classList.remove("active"));
 
-  // Add the active class to the clicked button
+
   const activeBtn = Array.from(document.querySelectorAll(".category-btn")).find(
     (btn) => btn.textContent.trim().toLowerCase() === category.toLowerCase()
   );
   
   if (activeBtn) activeBtn.classList.add("active");
+}
+function searchProjects() {
+  const input = document.getElementById("search").value.toLowerCase();
+  const projectElements = document.querySelectorAll(".project");
+
+  projectElements.forEach((project) => {
+    const title = project.querySelector("h1").textContent.toLowerCase();
+    const languages = Array.from(project.querySelectorAll(".language")).map(
+      (lang) => lang.textContent.toLowerCase()
+    );
+
+    if (title.includes(input) || languages.some((lang) => lang.includes(input))) {
+      project.style.display = "block";
+    } else {
+      project.style.display = "none";
+    }
+  });
 }
 
 // Initialize the first call to load all projects

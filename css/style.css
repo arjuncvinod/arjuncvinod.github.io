@@ -1068,3 +1068,20 @@ html {
 a,button{
   cursor: url('../images/cursor-pointer.svg'), auto;
 }
+
+/* projects */
+
+.search-container input{
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  outline: 2px solid gray;
+  background-color: inherit;
+  color: inherit;
+  padding: 0 5px;
+  font-size: 1rem;
+}
+.search-container input:focus{
+  outline: 3px solid var(--uiclr);
+}
